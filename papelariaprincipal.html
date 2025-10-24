@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papelaria da Ana Li</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="/css/papelaria.css">
+  <link rel=" shortcut icon" href="cereja.ico" type="image/x-icon">
+  
+</head>
+<body>
+
+
+  
+<header>
+    <img src="/img/logo.png" alt="Logo" />
+    <div class="right-side">
+      <nav>
+        <a href="papelariaprincipal.html">Home</a>
+        <a href="login.html">Login</a>
+      </nav>
+     <a href="carrinho.html">
+  <span class="material-symbols-outlined">shopping_cart</span>
+</a>
+
+      
+    </div>
+  </header>
+
+    <div class="slideshow-container">
+ 
+        <div class="mySlides fade">
+           <img src="/img/carrosel4.png">
+          
+        </div>
+ 
+        <div class="mySlides fade">
+            <img src="/img/carrosel2.png">
+        </div>
+ 
+        <div class="mySlides fade">
+            <img src="/img/carrosel.png">
+        </div>
+</script>
+ 
+        <div class="mySlides fade">
+            <img src="/img/carrosel3.png">
+           
+        </div>
+ 
+    </div>
+    <br>
+ 
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+       
+    </div>
+ 
+    <script>
+ 
+        let slideIndex = 0;
+        showSlides();
+ 
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+ 
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+ 
+            slideIndex++;
+            if (slideIndex > slides.length) slideIndex = 1;
+ 
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+ 
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // muda a imagem a cada 5s
+        }
+
+        </script>
+
+      <section id="mensagem-final">
+        <h3>🍒 Obrigado por visitar nossa papelaria! 🍒</h3>
+         <p>Esperamos que você encontre aqui tudo o que precisa para deixar seus estudos e seu trabalho ainda mais inspiradores!</p>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>
+    © 2025 Papelaria da Ana — todos os direitos reservados.
+</footer>
+ 
+</body>
+</html>
